@@ -18,6 +18,8 @@ export default function MoviesPage() {
 
   return (
     <View>
+      {__DEV__ && <Link href="/storybook">Storybook</Link>}
+
       <FlatList
         data={movies}
         renderItem={({ item }) => (
@@ -30,8 +32,6 @@ export default function MoviesPage() {
           />
         )}
       />
-      <Link href="/storybook">Storybook</Link>
-
       <BottomSheetMovies
         modalVisible={modalVisible}
         setModalVisible={setModalVisible}
