@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-native";
 import React from "react";
 import { View } from "react-native";
-import { ActionButton } from "../../src/components/ActionButton/ActionButton";
+import { ActionButton } from "../../src/components/ActionButton";
 import BottomSheet from "../../src/components/BottomSheet";
 
 const meta: Meta<typeof BottomSheet> = {

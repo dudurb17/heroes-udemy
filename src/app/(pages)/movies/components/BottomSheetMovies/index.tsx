@@ -1,8 +1,10 @@
-import { ActionButton } from "@/src/components/ActionButton/ActionButton";
-import BottomSheet from "@/src/components/BottomSheet";
-import { Movie } from "@/src/types/movies";
 import React from "react";
-import { Image, ScrollView, StyleSheet, Text } from "react-native";
+import { Image, ScrollView } from "react-native";
+import { ActionButton } from "../../../../../components/ActionButton";
+import BottomSheet from "../../../../../components/BottomSheet";
+import Text from "../../../../../components/Text";
+import { Movie } from "../../../../../types/movies";
+import styles from "./styles";
 
 export default function BottomSheetMovies({
   modalVisible,
@@ -38,27 +40,3 @@ export default function BottomSheetMovies({
     </BottomSheet>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 16,
-  },
-  poster: {
-    width: "100%",
-    height: 250,
-    borderRadius: 10,
-    marginBottom: 16,
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: "bold",
-    marginBottom: 12,
-    color: "#333",
-  },
-  synopsis: {
-    fontSize: 16,
-    lineHeight: 22,
-    color: "#444",
-    marginBottom: 24,
-  },
-});

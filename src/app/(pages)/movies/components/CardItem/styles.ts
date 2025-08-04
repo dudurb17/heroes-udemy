@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     alignItems: "flex-end",
     marginTop: -37.6,
     zIndex: 10,
-    justifyContent: "center",
+    alignSelf: "flex-end",
   },
   buttonText: {
     width: 100,

@@ -15,13 +15,6 @@ interface LoadingProps {
   size?: number | "small" | "large";
 }
 
-/**
- * Componente de Loading reutilizável com múltiplas variações.
- * Variants:
- *  - spinner: ActivityIndicator padrão
- *  - dots: três bolinhas pulsando
- *  - bar: barra de progresso infinita
- */
 export default function Loading({
   variant = "spinner",
   color = "#09a6ff",
@@ -38,7 +31,6 @@ export default function Loading({
   return <Bar color={color} />;
 }
 
-// Dot animation component
 function Dots({ color }: { color: string }) {
   const dot1 = useRef(new Animated.Value(0)).current;
   const dot2 = useRef(new Animated.Value(0)).current;
@@ -88,7 +80,6 @@ function Dots({ color }: { color: string }) {
   );
 }
 
-// Infinite bar component
 function Bar({ color }: { color: string }) {
   const translate = useRef(new Animated.Value(-50)).current;
 

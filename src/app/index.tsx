@@ -1,5 +1,5 @@
-import Loading from "@/src/components/Loading";
 import { View } from "react-native";
+import Loading from "../components/Loading";
 
 export default function Index() {
   return (
